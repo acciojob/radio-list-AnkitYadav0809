@@ -1,29 +1,24 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio List</title>
+    <style>
+        /* Style for even position radio buttons */
+        input[type="radio"]:nth-child(even) {
+            color: red; /* This will not change the color of the radio itself, but you can style the label */
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-	<input type="radio" id="a" name="fav_language">
-	<label for="a">Option 1</label>
-	<input type="radio" id="b" name="fav_language">
-	<label for="b">Option 2</label>
-	<input type="radio" id="c" name="fav_language">
-	<label for="c">Option 3</label>
-	<input type="radio" id="d" name="fav_language">
-	<label for="d">Option 4</label>
-	<input type="radio" id="e" name="fav_language">
-	<label for="e">Option 5</label>
-	<input type="radio" id="f" name="fav_language">
-	<label for="a">Option 6</label>
-	
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <form>
+        <label><input type="radio" name="options"> Option 1</label><br>
+        <label><input type="radio" name="options" disabled> Option 2</label><br>
+        <label><input type="radio" name="options" checked> Option 3</label><br>
+        <label><input type="radio" name="options"> Option 4</label><br>
+        <label><input type="radio" name="options"> Option 5</label><br>
+        <label><input type="radio" name="options"> Option 6</label><br>
+    </form>
 </body>
-
 </html>
